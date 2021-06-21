@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>طلباتي</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid class="grid1">
+    <ion-row class="row1">
+        <ion-col>
+        </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+        <ion-col>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-list >
+   
+<ion-list *ngFor ="let tag of donations_info | slice:1">
+  <ion-item *ngIf="tag !"> 
+
+   <div>
+  <ion-row>
+  <ion-col>
+  <p>  {{tag.furniture  === 'null' ? '' :tag.furniture }}</p>
+  </ion-col>
+  </ion-row>
+</div>
+  <div>
+  <ion-row>
+  <ion-col>
+ <p> {{tag.clothes === 'null' ? '' : tag.clothes}}</p> 
+  </ion-col>
+  </ion-row> 
+  </div>
+
+
+  <div>
+    <ion-row>
+    <ion-col>
+    <p>{{tag.electrical_tools === 'null' ? '':tag.electrical_tools}}</p>
+  </ion-col>
+  </ion-row>
+  </div>
+  <div>
+  <ion-row>
+  <ion-col>
+    <p>{{tag.baby_things === 'null' ? '' : tag.baby_things}}</p> 
+  </ion-col>
+  </ion-row>
+  </div>
+  <div>
+  <ion-row>
+  <ion-col>
+  <p>{{tag.dishes === 'null' ? '' :tag.dishes}}</p>
+  </ion-col>
+    </ion-row>
+  </div> 
+  <div>
+    <ion-row>
+    <ion-col>
+    <p>{{tag.luxuries === 'null' ? '' :tag. luxuries}}</p>
+    </ion-col>
+      </ion-row>
+    </div> 
+    <div>
+      <ion-row>
+      <ion-col>
+      <p>{{tag.accessories_and_mobiles === 'null' ? '' :tag.accessories_and_mobiles}}</p>
+      </ion-col>
+        </ion-row>
+      </div>
+      <div>
+        <ion-row>
+        <ion-col>
+        <p>{{tag.medical_devices=== 'null' ? '' :tag.medical_devices}}</p>
+        </ion-col>
+          </ion-row>
+        </div>
+        <div>
+          <ion-row>
+          <ion-col>
+          <p>{{tag.miscellaneous=== 'null' ? '' :tag.miscellaneous}}</p>
+          </ion-col>
+            </ion-row>
+          </div>
+  </ion-item></ion-list >
+</ion-list>
+</ion-content>
+    
