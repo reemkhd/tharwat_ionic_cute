@@ -44,7 +44,7 @@ export class RequestPage implements OnInit {
       //   this.user = user;
       // },
       donations_info => {
-       this.donations_info =donations_info
+       this.donations_info = donations_info
        console.log(donations_info);
         for(let i =0; i <= donations_info.length; i++){
          console.log(donations_info[i]);}
