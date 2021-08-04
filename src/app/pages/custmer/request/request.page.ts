@@ -36,9 +36,7 @@ export class RequestPage implements OnInit {
   }
 
 
-
   ionViewWillEnter() {
-    
     this.httpService.makeGet('auth/receive_donation').subscribe(
       // user => {
       //   this.user = user;
